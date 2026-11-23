@@ -1,1 +1,177 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITZONE | Transform Your Body</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">FIT<span>ZONE</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <ul id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#workouts">Workouts</a></li>
+      <li><a href="#trainers">Trainers</a></li>
+      <li><a href="#membership">Membership</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#register" class="nav-join">Join Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tagline">YOUR FITNESS JOURNEY STARTS HERE</p>
+    <h1>BUILD YOUR BODY.<br><span>BUILD YOUR FUTURE.</span></h1>
+    <p>Train harder, become stronger and achieve your fitness goals
+    with our professional trainers and modern facilities.</p>
+    <a href="#membership" class="btn">Explore Plans</a>
+    <a href="#register" class="btn outline">Join FITZONE</a>
+  </div>
+</section>
+
+<section class="section" id="workouts">
+  <h2>OUR WORKOUT PROGRAMS</h2>
+  <p class="subtitle">Choose your goal. Start your transformation.</p>
+  <div class="cards">
+    <article class="card">
+      <div class="emoji">🏋️</div>
+      <h3>Muscle Building</h3>
+      <p>Build strength and muscle with structured resistance training.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🔥</div>
+      <h3>Weight Loss</h3>
+      <p>Improve fitness with cardio and personalized workout plans.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🏃</div>
+      <h3>Cardio Training</h3>
+      <p>Improve stamina, heart health and endurance.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🧘</div>
+      <h3>Yoga & Flexibility</h3>
+      <p>Improve balance, flexibility and relaxation.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section dark" id="trainers">
+  <h2>MEET OUR TRAINERS</h2>
+  <p class="subtitle">Learn from experienced fitness professionals.</p>
+  <div class="cards">
+    <article class="card trainer">
+      <div class="trainer-icon">💪</div>
+      <h3>Arjun Kumar</h3>
+      <p>Strength & Muscle Building</p>
+    </article>
+    <article class="card trainer">
+      <div class="trainer-icon">🏃</div>
+      <h3>Priya Sharma</h3>
+      <p>Weight Loss & Cardio</p>
+    </article>
+    <article class="card trainer">
+      <div class="trainer-icon">🧘</div>
+      <h3>Rahul Verma</h3>
+      <p>Yoga & Flexibility</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="membership">
+  <h2>MEMBERSHIP PLANS</h2>
+  <p class="subtitle">Choose the right plan for your fitness journey.</p>
+  <div class="cards">
+    <article class="card price-card">
+      <h3>Basic</h3>
+      <h2>₹999<span>/month</span></h2>
+      <p>Gym access</p>
+      <p>Basic equipment</p>
+      <p>Locker facility</p>
+      <a href="#register" class="btn">Choose Plan</a>
+    </article>
+    <article class="card price-card featured">
+      <h3>Premium</h3>
+      <h2>₹1,999<span>/month</span></h2>
+      <p>Full gym access</p>
+      <p>Personal training sessions</p>
+      <p>Diet guidance</p>
+      <a href="#register" class="btn">Choose Plan</a>
+    </article>
+    <article class="card price-card">
+      <h3>Elite</h3>
+      <h2>₹2,999<span>/month</span></h2>
+      <p>All premium features</p>
+      <p>Dedicated trainer</p>
+      <p>Customized fitness plan</p>
+      <a href="#register" class="btn">Choose Plan</a>
+    </article>
+  </div>
+  <p class="note">*Demo prices. Update these according to your actual gym.</p>
+</section>
+
+<section class="section dark" id="facilities">
+  <h2>OUR FACILITIES</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="emoji">🏋️</div>
+      <h3>Modern Equipment</h3>
+      <p>Quality strength and cardio equipment.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🚿</div>
+      <h3>Shower Rooms</h3>
+      <p>Clean and comfortable shower facilities.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🔐</div>
+      <h3>Lockers</h3>
+      <p>Secure personal storage facilities.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🅿️</div>
+      <h3>Parking</h3>
+      <p>Convenient parking for members.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section register" id="register">
+  <h2>JOIN FITZONE TODAY</h2>
+  <p class="subtitle">Take the first step towards a stronger you.</p>
+
+  <form id="registrationForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" placeholder="Phone Number"
+      pattern="[0-9]{10}" maxlength="10" required>
+
+    <select id="plan" required>
+      <option value="">Select Membership</option>
+      <option>Basic</option>
+      <option>Premium</option>
+      <option>Elite</option>
+    </select>
+
+    <button type="submit" class="btn">Register Now</button>
+    <p id="formMessage" aria-live="polite"></p>
+  </form>
+</section>
+
+<footer>
+  <h2>FIT<span>ZONE</span></h2>
+  <p>Transform Your Body. Transform Your Life.</p>
+  <p>Contact: info@fitzone.com | +91 9876543210</p>
+  <p>© 2026 FITZONE. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
